@@ -19,7 +19,7 @@ import java.util.Collection;
 import java.util.Map;
 
 @AllArgsConstructor
-public class JPASearchCore {
+    public class JPASearchCore {
 
     public static <R> Specification<R> specification(JPASearchInput.RootFilter filter,
                                                      Map<String, Pair<Searchable, Class<?>>> searchableFields,

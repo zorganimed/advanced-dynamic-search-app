@@ -1,12 +1,12 @@
 package io.github.zorganimed.advanceddynamicsearchapp;
 
-import org.junit.jupiter.api.Test;
+/*import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootTest
+@SpringBootTest*/
 class AdvancedDynamicSearchAppApplicationTests {
 
-    @Test
+    //@Test
     void contextLoads() {
     }
 

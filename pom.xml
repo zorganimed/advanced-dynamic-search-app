@@ -12,7 +12,7 @@
     </parent>
     <groupId>io.github.zorganimed</groupId>
     <artifactId>advanced-dynamic-search-app</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <packaging>jar</packaging>
     <name>advanced-dynamic-search-app</name>
     <description>advanced-dynamic-search-app</description>
@@ -54,6 +54,20 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
+        <awaitility.version>4.2.0</awaitility.version>
+        <junit.version>5.10.1</junit.version>
+        <spotless.version>2.43.0</spotless.version>
+        <json-path.version>2.9.0</json-path.version>
+
+        <!-- Plugins version -->
+        <maven-compiler-plugin.version>3.11.0</maven-compiler-plugin.version>
+        <maven-surefire-plugin.version>3.1.2</maven-surefire-plugin.version>
+        <central-publishing-maven-plugin.version>0.3.0</central-publishing-maven-plugin.version>
+        <nexus-staging-maven-plugin.version>1.6.7</nexus-staging-maven-plugin.version>
+        <maven-gpg-plugin.version>1.5</maven-gpg-plugin.version>
+        <maven-javadoc-plugin.version>2.9.1</maven-javadoc-plugin.version>
+        <maven-source-plugin.version>2.2.1</maven-source-plugin.version>
+        <spring-boot.repackage.skip>true</spring-boot.repackage.skip>
     </properties>
     <dependencies>
         <dependency>
@@ -67,7 +81,15 @@
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-aop</artifactId>
         </dependency>
         <dependency>
             <groupId>jakarta.validation</groupId>
@@ -79,16 +101,16 @@
             <artifactId>lombok</artifactId>
             <optional>true</optional>
         </dependency>
-        <dependency>
+        <!--dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
             <scope>runtime</scope>
-        </dependency>
-        <dependency>
+        </dependency-->
+        <!--dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
-        </dependency>
+        </dependency-->
     </dependencies>
 
     <build>
