@@ -12,7 +12,7 @@
     </parent>
     <groupId>io.github.zorganimed</groupId>
     <artifactId>advanced-dynamic-search-app</artifactId>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <packaging>jar</packaging>
     <name>advanced-dynamic-search-app</name>
     <description>advanced-dynamic-search-app</description>
@@ -195,7 +195,8 @@
                             <goal>sign</goal>
                         </goals>
                         <configuration>
-                            <keyname>0x0A5319DC</keyname>
+                            <!--0x0A5319DC-->
+                            <keyname>0x84E86866</keyname>
                             <gpgArguments>
                                 <arg>--pinentry-mode</arg>
                                 <arg>loopback</arg>

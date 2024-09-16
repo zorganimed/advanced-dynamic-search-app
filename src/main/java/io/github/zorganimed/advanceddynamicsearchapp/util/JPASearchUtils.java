@@ -47,7 +47,7 @@ public class JPASearchUtils {
 
                     var field = e.getKey().contains("_") ? e.getKey().substring(0, e.getKey().lastIndexOf("_")) : e.getKey();
                     var operator = e.getKey().contains("_") ? e.getKey().substring(e.getKey().lastIndexOf("_") + 1) : JPASearchOperatorFilter.EQ.getValue();
-                    var ignoreCase = false;
+                    var ignoreCase = true;
                     if (operator.contains(IGNORE_CASE_OPTION_IDENTIFIER)) {
                         ignoreCase = true;
                         operator = operator.replace(IGNORE_CASE_OPTION_IDENTIFIER, "");
